@@ -11,7 +11,7 @@ def load_urls_from_file(file_path: str):
             content = f.readlines()
             return content
     except FileNotFoundError:
-        print('The file ' + file_path + ' could not be found')
+        print("the file " + file_path + " could not be found")
         exit(2)
 
 
@@ -62,4 +62,5 @@ def scrape_page(page_contents: str):
                 except UnicodeEncodeError:
                     print(".")
 
-        return clean_words
+    return clean_words
+
